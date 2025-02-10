@@ -1,5 +1,5 @@
 const resumeLists = document.querySelectorAll('.resume-list');
-const resumeBoxs = document.querySelectorAll('.resume-box');
+const resumeBoxes = document.querySelectorAll('.resume-box');
 
 //navbar actions and all section actions along with cube rotation when navbar is clicked
 
@@ -11,7 +11,7 @@ resumeLists.forEach((list, idx)=>{
         list.classList.add('active');
 
         document.querySelector('.resume-box.active').classList.remove('active');
-        resumeBoxs[idx].classList.add('active');
+        resumeBoxes[idx].classList.add('active');
     });
 });
 
