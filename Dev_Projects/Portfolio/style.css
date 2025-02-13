@@ -9,6 +9,7 @@
     border: none;
     outline: none;
     font-family: "Poppins", serif;
+    
 }
 
 :root {
@@ -48,6 +49,7 @@ html {
 body {
     color: var(--white-color);
     overflow: hidden;
+    
 }
 
 p {
@@ -168,7 +170,7 @@ a:hover .tooltip,
     background: var(--second-bg-color);
 }
 
-.section.about {
+ .section.about {
     transform: translateX(50vw) translateZ(-50vw) rotateY(90deg);
 }
 
@@ -285,8 +287,9 @@ a:hover .tooltip,
 .img-box img {
     position: absolute;
     top: 3rem;
+    left: 12rem;
     display: block;
-    width: 150%;
+    width: 75%;
     object-fit: cover;
 }
 
@@ -397,7 +400,7 @@ a:hover .tooltip,
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: var(--third-bg-color);
+    background: var(--second-bg-color);
     border-radius: .8rem;
     padding: 2rem;
 }
@@ -529,17 +532,12 @@ a:hover .tooltip,
     position: relative;
     display: inline-flex;
     padding: 1rem;
-    background: var(--white-color);
+    background: var(--tab-list-color);
     border-radius: 50%;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     color: var(--bg-color);
     transition: .3s;
 }
-
-
-
-
-
 
 .portfolio-item .work-icon a:hover {
     background: var(--main-color);
@@ -552,6 +550,24 @@ a:hover .tooltip,
 .portfolio-item .work-icon a:nth-child(1) i {
     transform: rotate(135deg);
 }
+
+.portfolio-item .service-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.portfolio-item .service-icon .icon {
+    font-size: 5rem;
+    margin-left: -.3rem;
+}
+
+.portfolio-item .service-icon a i {
+    transform: rotate(-135deg);
+}
+
+
 
 /*Contact*/
 
